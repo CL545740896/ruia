@@ -13,7 +13,7 @@
         <meta name="description" content="An async web scraping micro-framework based on asyncio.">
       
       
-        <link rel="canonical" href="https://howie6879.github.io/ruia/en/tutorials/middleware.html">
+        <link rel="canonical" href="https://docs.python-ruia.org/en/tutorials/middleware.html">
       
       
         <meta name="author" content="howie.hu">
@@ -37,8 +37,8 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.2">
     
     
       
@@ -46,12 +46,12 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.982221ab.css">
       
       
     
     
-      <script src="../../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../../assets/javascripts/modernizr.1f0bcf2b.js"></script>
     
     
       
@@ -62,6 +62,9 @@
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
+    
+    
+      
     
     
   </head>
@@ -97,14 +100,18 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#customize-middleware" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://howie6879.github.io/ruia/" title="Ruia" class="md-header-nav__button md-logo">
+        <a href="https://docs.python-ruia.org/" title="Ruia" class="md-header-nav__button md-logo">
           
-            <i class="md-icon"></i>
+            <img src="../../images/logo.png" width="24" height="24">
           
         </a>
       </div>
@@ -114,22 +121,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Ruia
-              </span>
-              <span class="md-header-nav__topic">
-                6. Customize Middleware
-              </span>
-            
+            <span class="md-header-nav__topic">
+              Ruia
+            </span>
+            <span class="md-header-nav__topic">
+              6. Customize Middleware
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -152,7 +156,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -163,20 +166,18 @@
 
   
 
-
-  <a href="https://github.com/howie6879/ruia/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      howie6879/ruia
+<a href="https://github.com/howie6879/ruia/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    howie6879/ruia
+  </div>
+</a>
           </div>
         </div>
       
@@ -198,9 +199,9 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://howie6879.github.io/ruia/" title="Ruia" class="md-nav__button md-logo">
+    <a href="https://docs.python-ruia.org/" title="Ruia" class="md-nav__button md-logo">
       
-        <i class="md-icon"></i>
+        <img src="../../images/logo.png" width="48" height="48">
       
     </a>
     Ruia
@@ -212,20 +213,18 @@
 
   
 
-
-  <a href="https://github.com/howie6879/ruia/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      howie6879/ruia
+<a href="https://github.com/howie6879/ruia/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    howie6879/ruia
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -345,6 +344,8 @@
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
     
     
     <a href="middleware.html" title="6. Customize Middleware" class="md-nav__link md-nav__link--active">
@@ -477,10 +478,58 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
-      Examples
+      Topics
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
+        Topics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/write_spiders_like_scrapy.html" title="Write Spiders like Scrapy" class="md-nav__link">
+      Write Spiders like Scrapy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/item_data_cleaning.html" title="Item Data Cleaning" class="md-nav__link">
+      Item Data Cleaning
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Examples
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
         Examples
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -510,6 +559,21 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -518,9 +582,63 @@
                   <a href="https://github.com/howie6879/ruia/edit/master/docs/en/tutorials/middleware.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>6. Customize Middleware</h1>
-                
-                
+                <h1 id="customize-middleware">Customize Middleware</h1>
+<p><code>Middleware</code> is mainly used to process before request and process after response,
+such as listening request and response.</p>
+<p>Here is an example:</p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">ruia</span> <span class="kn">import</span> <span class="n">Spider</span><span class="p">,</span> <span class="n">Middleware</span>
+
+<span class="n">middleware</span> <span class="o">=</span> <span class="n">Middleware</span><span class="p">()</span>
+
+
+<span class="nd">@middleware.request</span>
+<span class="n">async</span> <span class="k">def</span> <span class="nf">print_on_request</span><span class="p">(</span><span class="n">spider_ins</span><span class="p">,</span> <span class="n">request</span><span class="p">):</span>
+    <span class="n">request</span><span class="o">.</span><span class="n">metadata</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="n">request</span><span class="o">.</span><span class="n">url</span>
+    <span class="p">}</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;request: {request.metadata}&quot;</span><span class="p">)</span>
+    <span class="c1"># Just operate request object, and do not return anything.</span>
+
+
+<span class="nd">@middleware.response</span>
+<span class="n">async</span> <span class="k">def</span> <span class="nf">print_on_response</span><span class="p">(</span><span class="n">spider_ins</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;response: {response.metadata}&quot;</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">MiddlewareSpiderDemo</span><span class="p">(</span><span class="n">Spider</span><span class="p">):</span>
+    <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://httpbin.org/get&#39;</span><span class="p">]</span>
+    <span class="n">concurrency</span> <span class="o">=</span> <span class="mi">10</span>
+
+    <span class="n">async</span> <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+        <span class="n">pages</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="s1">&#39;https://httpbin.org/get?p={i}&#39;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)]</span>
+        <span class="n">async</span> <span class="k">for</span> <span class="n">resp</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">multiple_request</span><span class="p">(</span><span class="n">urls</span><span class="o">=</span><span class="n">pages</span><span class="p">):</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">url</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">MiddlewareSpiderDemo</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">middleware</span><span class="o">=</span><span class="n">middleware</span><span class="p">)</span>
+</pre></div>
+
+
+<p>If successful, your terminal will have the following output:</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="mi">2019</span><span class="p">:</span><span class="mo">03</span><span class="p">:</span><span class="mo">05</span> <span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mo">03</span><span class="p">]</span> <span class="n">INFO</span>  <span class="n">Spider</span>  <span class="n">Spider</span> <span class="n">started</span><span class="err">!</span>
+<span class="p">[</span><span class="mi">2019</span><span class="p">:</span><span class="mo">03</span><span class="p">:</span><span class="mo">05</span> <span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mo">03</span><span class="p">]</span> <span class="n">INFO</span>  <span class="n">Spider</span>  <span class="n">Worker</span> <span class="n">started</span><span class="p">:</span> <span class="mi">4396957904</span>
+<span class="p">[</span><span class="mi">2019</span><span class="p">:</span><span class="mo">03</span><span class="p">:</span><span class="mo">05</span> <span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mo">03</span><span class="p">]</span> <span class="n">INFO</span>  <span class="n">Spider</span>  <span class="n">Worker</span> <span class="n">started</span><span class="p">:</span> <span class="mi">4396958040</span>
+<span class="p">[</span><span class="mi">2019</span><span class="p">:</span><span class="mo">03</span><span class="p">:</span><span class="mo">05</span> <span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mo">03</span><span class="p">]</span> <span class="n">INFO</span>  <span class="n">Request</span> <span class="o">&lt;</span><span class="n">GET</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">httpbin</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">get</span><span class="o">&gt;</span>
+<span class="n">request</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="s1">&#39;https://httpbin.org/get&#39;</span><span class="p">}</span>
+<span class="n">request</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="s1">&#39;https://httpbin.org/get?p=1&#39;</span><span class="p">}</span>
+<span class="p">[</span><span class="mi">2019</span><span class="p">:</span><span class="mo">03</span><span class="p">:</span><span class="mo">05</span> <span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mo">05</span><span class="p">]</span> <span class="n">INFO</span>  <span class="n">Request</span> <span class="o">&lt;</span><span class="n">GET</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">httpbin</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">get</span><span class="err">?</span><span class="n">p</span><span class="o">=</span><span class="mi">1</span><span class="o">&gt;</span>
+<span class="p">[</span><span class="mi">2019</span><span class="p">:</span><span class="mo">03</span><span class="p">:</span><span class="mo">05</span> <span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mo">06</span><span class="p">]</span> <span class="n">INFO</span>  <span class="n">Spider</span>  <span class="n">Stopping</span> <span class="n">spider</span><span class="p">:</span> <span class="n">Ruia</span>
+<span class="p">[</span><span class="mi">2019</span><span class="p">:</span><span class="mo">03</span><span class="p">:</span><span class="mo">05</span> <span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mo">06</span><span class="p">]</span> <span class="n">INFO</span>  <span class="n">Spider</span>  <span class="n">Total</span> <span class="n">requests</span><span class="p">:</span> <span class="mi">2</span>
+<span class="p">[</span><span class="mi">2019</span><span class="p">:</span><span class="mo">03</span><span class="p">:</span><span class="mo">05</span> <span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mo">06</span><span class="p">]</span> <span class="n">INFO</span>  <span class="n">Spider</span>  <span class="n">Time</span> <span class="n">usage</span><span class="p">:</span> <span class="mi">0</span><span class="p">:</span><span class="mo">00</span><span class="p">:</span><span class="mf">02.531665</span>
+<span class="p">[</span><span class="mi">2019</span><span class="p">:</span><span class="mo">03</span><span class="p">:</span><span class="mo">05</span> <span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mo">06</span><span class="p">]</span> <span class="n">INFO</span>  <span class="n">Spider</span>  <span class="n">Spider</span> <span class="n">finished</span><span class="err">!</span>
+<span class="n">response</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="s1">&#39;https://httpbin.org/get?p=1&#39;</span><span class="p">}</span>
+<span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">httpbin</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">get</span><span class="err">?</span><span class="n">p</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">response</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="s1">&#39;https://httpbin.org/get&#39;</span><span class="p">}</span>
+</pre></div>
+
+
+<p>For full usage of Middleware, see <a href="../apis/middleware.html">Middleware</a> API </p>
                 
                   
                 
@@ -588,20 +706,15 @@
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../../assets/javascripts/application.d9aa80ab.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
-      
-    
-    
       
     
   </body>

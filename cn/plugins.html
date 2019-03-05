@@ -13,7 +13,7 @@
         <meta name="description" content="An async web scraping micro-framework based on asyncio.">
       
       
-        <link rel="canonical" href="https://howie6879.github.io/ruia/cn/plugins.html">
+        <link rel="canonical" href="https://docs.python-ruia.org/cn/plugins.html">
       
       
         <meta name="author" content="howie.hu">
@@ -37,8 +37,8 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <link rel="shortcut icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.2">
     
     
       
@@ -46,12 +46,12 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.982221ab.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../assets/javascripts/modernizr.1f0bcf2b.js"></script>
     
     
       
@@ -62,6 +62,9 @@
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
+    
+    
+      
     
     
   </head>
@@ -106,9 +109,9 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://howie6879.github.io/ruia/" title="Ruia" class="md-header-nav__button md-logo">
+        <a href="https://docs.python-ruia.org/" title="Ruia" class="md-header-nav__button md-logo">
           
-            <i class="md-icon"></i>
+            <img src="../images/logo.png" width="24" height="24">
           
         </a>
       </div>
@@ -118,22 +121,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Ruia
-              </span>
-              <span class="md-header-nav__topic">
-                Plugins
-              </span>
-            
+            <span class="md-header-nav__topic">
+              Ruia
+            </span>
+            <span class="md-header-nav__topic">
+              Plugins
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -156,7 +156,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -167,20 +166,18 @@
 
   
 
-
-  <a href="https://github.com/howie6879/ruia/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      howie6879/ruia
+<a href="https://github.com/howie6879/ruia/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    howie6879/ruia
+  </div>
+</a>
           </div>
         </div>
       
@@ -202,9 +199,9 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://howie6879.github.io/ruia/" title="Ruia" class="md-nav__button md-logo">
+    <a href="https://docs.python-ruia.org/" title="Ruia" class="md-nav__button md-logo">
       
-        <i class="md-icon"></i>
+        <img src="../images/logo.png" width="48" height="48">
       
     </a>
     Ruia
@@ -216,20 +213,18 @@
 
   
 
-
-  <a href="https://github.com/howie6879/ruia/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      howie6879/ruia
+<a href="https://github.com/howie6879/ruia/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    howie6879/ruia
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -472,10 +467,58 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
-      Examples
+      Topics
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
+        Topics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../en/topics/write_spiders_like_scrapy.html" title="Write Spiders like Scrapy" class="md-nav__link">
+      Write Spiders like Scrapy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../en/topics/item_data_cleaning.html" title="Item Data Cleaning" class="md-nav__link">
+      Item Data Cleaning
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Examples
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
         Examples
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -644,7 +687,7 @@ touch __init__.py
 
 
 <span class="nd">@middleware.request</span>
-<span class="n">async</span> <span class="k">def</span> <span class="nf">add_random_ua</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+<span class="n">async</span> <span class="k">def</span> <span class="nf">add_random_ua</span><span class="p">(</span><span class="n">spider_ins</span><span class="p">,</span> <span class="n">request</span><span class="p">):</span>
     <span class="n">ua</span> <span class="o">=</span> <span class="n">await</span> <span class="n">get_random_user_agent</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="p">:</span>
         <span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;User-Agent&#39;</span><span class="p">:</span> <span class="n">ua</span><span class="p">})</span>
@@ -723,20 +766,15 @@ touch __init__.py
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../assets/javascripts/application.d9aa80ab.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-      
-    
-    
       
     
   </body>

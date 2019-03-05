@@ -13,7 +13,7 @@
         <meta name="description" content="An async web scraping micro-framework based on asyncio.">
       
       
-        <link rel="canonical" href="https://howie6879.github.io/ruia/en/tutorials/item.html">
+        <link rel="canonical" href="https://docs.python-ruia.org/en/tutorials/item.html">
       
       
         <meta name="author" content="howie.hu">
@@ -37,8 +37,8 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.2">
     
     
       
@@ -46,12 +46,12 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.982221ab.css">
       
       
     
     
-      <script src="../../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../../assets/javascripts/modernizr.1f0bcf2b.js"></script>
     
     
       
@@ -62,6 +62,9 @@
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
+    
+    
+      
     
     
   </head>
@@ -106,9 +109,9 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://howie6879.github.io/ruia/" title="Ruia" class="md-header-nav__button md-logo">
+        <a href="https://docs.python-ruia.org/" title="Ruia" class="md-header-nav__button md-logo">
           
-            <i class="md-icon"></i>
+            <img src="../../images/logo.png" width="24" height="24">
           
         </a>
       </div>
@@ -118,22 +121,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Ruia
-              </span>
-              <span class="md-header-nav__topic">
-                3. Define Data Items
-              </span>
-            
+            <span class="md-header-nav__topic">
+              Ruia
+            </span>
+            <span class="md-header-nav__topic">
+              3. Define Data Items
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -156,7 +156,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -167,20 +166,18 @@
 
   
 
-
-  <a href="https://github.com/howie6879/ruia/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      howie6879/ruia
+<a href="https://github.com/howie6879/ruia/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    howie6879/ruia
+  </div>
+</a>
           </div>
         </div>
       
@@ -202,9 +199,9 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://howie6879.github.io/ruia/" title="Ruia" class="md-nav__button md-logo">
+    <a href="https://docs.python-ruia.org/" title="Ruia" class="md-nav__button md-logo">
       
-        <i class="md-icon"></i>
+        <img src="../../images/logo.png" width="48" height="48">
       
     </a>
     Ruia
@@ -216,20 +213,18 @@
 
   
 
-
-  <a href="https://github.com/howie6879/ruia/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      howie6879/ruia
+<a href="https://github.com/howie6879/ruia/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    howie6879/ruia
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -350,8 +345,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#html-document-analyzing" title="HTML document analyzing" class="md-nav__link">
-    HTML document analyzing
+  <a href="#analyze-html-document" title="Analyze HTML document" class="md-nav__link">
+    Analyze HTML document
   </a>
   
 </li>
@@ -385,13 +380,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-cleaning" title="Data Cleaning" class="md-nav__link">
-    Data Cleaning
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#get-many-items-from-one-page" title="Get Many Items from One Page" class="md-nav__link">
     Get Many Items from One Page
   </a>
@@ -408,6 +396,13 @@
         <li class="md-nav__item">
   <a href="#more-fields" title="More Fields" class="md-nav__link">
     More Fields
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further" title="Further" class="md-nav__link">
+    Further
   </a>
   
 </li>
@@ -582,10 +577,58 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
-      Examples
+      Topics
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
+        Topics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/write_spiders_like_scrapy.html" title="Write Spiders like Scrapy" class="md-nav__link">
+      Write Spiders like Scrapy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/item_data_cleaning.html" title="Item Data Cleaning" class="md-nav__link">
+      Item Data Cleaning
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Examples
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
         Examples
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -643,8 +686,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#html-document-analyzing" title="HTML document analyzing" class="md-nav__link">
-    HTML document analyzing
+  <a href="#analyze-html-document" title="Analyze HTML document" class="md-nav__link">
+    Analyze HTML document
   </a>
   
 </li>
@@ -678,13 +721,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-cleaning" title="Data Cleaning" class="md-nav__link">
-    Data Cleaning
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#get-many-items-from-one-page" title="Get Many Items from One Page" class="md-nav__link">
     Get Many Items from One Page
   </a>
@@ -701,6 +737,13 @@
         <li class="md-nav__item">
   <a href="#more-fields" title="More Fields" class="md-nav__link">
     More Fields
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further" title="Further" class="md-nav__link">
+    Further
   </a>
   
 </li>
@@ -741,7 +784,7 @@ It defines what you want to get from HTML document.</p>
 
 
 <p>Now let's reconstruct this Item.</p>
-<h2 id="html-document-analyzing">HTML document analyzing</h2>
+<h2 id="analyze-html-document">Analyze HTML document</h2>
 <p>Supposing that we want to get the current python documentation version
 and its tutorial page link.</p>
 <p>We read the HTML source at <a href="https://docs.python.org/3/">https://docs.python.org/3/</a>.</p>
@@ -857,123 +900,6 @@ If not, remember the following tips:</p>
 The first line is the log of <code>Ruia</code>,
 and the following two lines are the data we want.</p>
 <p>Okay, we have already finished the construction of our first Item.</p>
-<h2 id="data-cleaning">Data Cleaning</h2>
-<p>Now we get the version string: <code>3.7.2 Documentation</code>.
-However, the <code>Documentation</code> is unnecessary.
-Certainly we can solve this problem in such a way:</p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
-<span class="kn">from</span> <span class="nn">ruia</span> <span class="kn">import</span> <span class="n">Item</span><span class="p">,</span> <span class="n">TextField</span><span class="p">,</span> <span class="n">AttrField</span>
-
-
-<span class="k">class</span> <span class="nc">PythonDocumentationItem</span><span class="p">(</span><span class="n">Item</span><span class="p">):</span>
-    <span class="n">title</span> <span class="o">=</span> <span class="n">TextField</span><span class="p">(</span><span class="n">css_select</span><span class="o">=</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
-    <span class="n">tutorial_link</span> <span class="o">=</span> <span class="n">AttrField</span><span class="p">(</span><span class="n">xpath_select</span><span class="o">=</span><span class="s2">&quot;//a[text()=&#39;Tutorial&#39;]&quot;</span><span class="p">,</span> <span class="n">attr</span><span class="o">=</span><span class="s1">&#39;href&#39;</span><span class="p">)</span>
-
-
-<span class="n">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-    <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://docs.python.org/3/&#39;</span>
-    <span class="n">item</span> <span class="o">=</span> <span class="n">await</span> <span class="n">PythonDocumentationItem</span><span class="o">.</span><span class="n">get_item</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">)</span>
-    <span class="n">title</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">tutorial_link</span><span class="p">)</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="c1"># Python 3.7 required</span>
-    <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>  
-
-    <span class="c1"># For python 3.6</span>
-    <span class="c1"># loop = asyncio.new_event_loop()</span>
-    <span class="c1"># loop.run_until_complete(main())</span>
-
-<span class="c1"># Output:</span>
-<span class="c1"># [2019:01:21 18:19:02]-Request-INFO  request: &lt;GET: https://docs.python.org/3/&gt;</span>
-<span class="c1"># 3.7.2</span>
-<span class="c1"># tutorial/index.html</span>
-</pre></div>
-
-
-<p>It works well, and it's okay if you like it.</p>
-<p>Now consider such a way:</p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
-<span class="kn">from</span> <span class="nn">ruia</span> <span class="kn">import</span> <span class="n">Item</span><span class="p">,</span> <span class="n">TextField</span><span class="p">,</span> <span class="n">AttrField</span>
-
-
-<span class="k">class</span> <span class="nc">PythonDocumentationItem</span><span class="p">(</span><span class="n">Item</span><span class="p">):</span>
-    <span class="n">title</span> <span class="o">=</span> <span class="n">TextField</span><span class="p">(</span><span class="n">css_select</span><span class="o">=</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
-    <span class="n">tutorial_link</span> <span class="o">=</span> <span class="n">AttrField</span><span class="p">(</span><span class="n">xpath_select</span><span class="o">=</span><span class="s2">&quot;//a[text()=&#39;Tutorial&#39;]&quot;</span><span class="p">,</span> <span class="n">attr</span><span class="o">=</span><span class="s1">&#39;href&#39;</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">clean_title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">value</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-
-
-<span class="n">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-    <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://docs.python.org/3/&#39;</span>
-    <span class="n">item</span> <span class="o">=</span> <span class="n">await</span> <span class="n">PythonDocumentationItem</span><span class="o">.</span><span class="n">get_item</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">tutorial_link</span><span class="p">)</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="c1"># Python 3.7 required</span>
-    <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>  
-
-    <span class="c1"># For python 3.6</span>
-    <span class="c1"># loop = asyncio.new_event_loop()</span>
-    <span class="c1"># loop.run_until_complete(main())</span>
-
-<span class="c1"># Output:</span>
-<span class="c1"># [2019:01:21 18:19:02]-Request-INFO  request: &lt;GET: https://docs.python.org/3/&gt;</span>
-<span class="c1"># 3.7.2</span>
-<span class="c1"># tutorial/index.html</span>
-</pre></div>
-
-
-<p>Wow!
-Now we directly get a pure version string from <code>item.title</code>.</p>
-<p><code>ruia</code> will automatically recognize methods starts with <code>clean_</code>.
-If there's a field named <code>the_field</code>,
-then its corresponding data cleaning method is <code>clean_the_field</code>.
-Just add a prefix <code>clean_</code> is okay.</p>
-<p>The default clean method of each field is just return the string itself.
-Before data cleaning, fields are all pure python strings (sometimes a list or a dict of pure python strings).
-If you want <code>item.index</code> to return a python integer,
-please define <code>clean_index</code> method to <code>return int(value)</code>.</p>
-<p>In <code>ruia</code>,
-we tend to separate a crawler into two main parts:</p>
-<ul>
-<li>Data acquisition, for parsing HTML and create structured data;</li>
-<li>Data processing, for data persistence or some other operations.</li>
-</ul>
-<p>Data acquisition is all in <code>Item</code> object,
-including data cleaning.
-And data processing will be introduced later,
-in <code>ruia.Spider.parse</code> functions.
-At data processing, we hope <code>item.field</code> return quite the value you want.
-<code>ruia.Item</code> tries to avoid such operations:</p>
-<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">MySpider</span><span class="p">(</span><span class="n">Spider</span><span class="p">):</span>
-    <span class="n">async</span> <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-        <span class="n">item</span> <span class="o">=</span> <span class="n">MyItem</span><span class="o">.</span><span class="n">get_item</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
-        <span class="n">title</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">index</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
-        <span class="n">tags</span> <span class="o">=</span> <span class="p">[</span><span class="n">tag</span> <span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">index</span><span class="o">.</span><span class="n">tags</span> <span class="k">if</span> <span class="n">tag</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;not&#39;</span><span class="p">,</span><span class="s1">&#39;wanted&#39;</span><span class="p">,</span><span class="s1">&#39;tags&#39;</span><span class="p">)]</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;The square of index: &#39;</span><span class="p">,</span> <span class="n">index</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Tags: &#39;</span><span class="p">,</span> <span class="o">*</span><span class="n">tags</span><span class="p">)</span>
-</pre></div>
-
-
-<p>We want to write such a clean code:</p>
-<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">MySpider</span><span class="p">(</span><span class="n">Spider</span><span class="p">):</span>
-    <span class="n">async</span> <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-        <span class="n">item</span> <span class="o">=</span> <span class="n">MyItem</span><span class="o">.</span><span class="n">get_item</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;The square of index: &#39;</span><span class="p">,</span> <span class="n">item</span><span class="o">.</span><span class="n">index</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Tags: &#39;</span><span class="p">,</span> <span class="o">*</span><span class="n">item</span><span class="o">.</span><span class="n">tags</span><span class="p">)</span>
-</pre></div>
-
-
-<p>It's more beautiful, isn't it?</p>
 <h2 id="get-many-items-from-one-page">Get Many Items from One Page</h2>
 <p>Here's a HTML document.
 It's simple and readable.</p>
@@ -1033,7 +959,7 @@ Here's an example.</p>
     <span class="n">title</span> <span class="o">=</span> <span class="n">TextField</span><span class="p">(</span><span class="n">css_select</span><span class="o">=</span><span class="s1">&#39;.title&#39;</span><span class="p">)</span>
     <span class="n">star</span> <span class="o">=</span> <span class="n">TextField</span><span class="p">(</span><span class="n">css_select</span><span class="o">=</span><span class="s1">&#39;.star&#39;</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">clean_star</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="n">async</span> <span class="k">def</span> <span class="nf">clean_star</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 
 
@@ -1124,7 +1050,7 @@ Here we want to get a list a pure strings from <code>tag</code> field.
     <span class="n">star</span> <span class="o">=</span> <span class="n">TextField</span><span class="p">(</span><span class="n">css_select</span><span class="o">=</span><span class="s1">&#39;.star&#39;</span><span class="p">)</span>
     <span class="n">tags</span> <span class="o">=</span> <span class="n">TextField</span><span class="p">(</span><span class="n">css_select</span><span class="o">=</span><span class="s1">&#39;.tag&#39;</span><span class="p">,</span> <span class="n">many</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">clean_star</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="n">async</span> <span class="k">def</span> <span class="nf">clean_star</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 
 
@@ -1155,6 +1081,11 @@ It is only used for performance limitation, however, because of ruia's fast,
 we seldom meet performance limitation.</p>
 <p>There is a <code>HtmlField</code> to extract pure HTML source of a HTML element.</p>
 <p>Read <a href="../apis/field.html">Field API</a> to get more information.</p>
+<h2 id="further">Further</h2>
+<p>Read the following essays for further learning.</p>
+<ul>
+<li><a href="../topics/item_data_cleaning.html">Data Cleaning</a></li>
+</ul>
                 
                   
                 
@@ -1222,20 +1153,15 @@ we seldom meet performance limitation.</p>
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../../assets/javascripts/application.d9aa80ab.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
-      
-    
-    
       
     
   </body>
